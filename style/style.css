@@ -24,7 +24,7 @@
 
 body{
     width: 100vw;
-    /* height: 100vh; */
+    height: 100%;
     background-color: var(--primary-clr-one);
     padding: 50px 0;
     display: flex;
@@ -36,7 +36,6 @@ body{
 /* Main container */
 .main-container{
     width: 350px;
-    /* height: 110vh; */
     background-color: var(--primary-clr-two);
     border-radius: 10px;
     display: flex;
@@ -132,6 +131,75 @@ body{
     letter-spacing: 2px;
 }
 /* End Data container */
+
+
+
+
+/* Laptop screen */
+@media screen and (min-width: 1440px) {
+    body{
+        height: 100vh;
+    }
+
+    .img-container{
+        background-image: url("../images/image-header-desktop.jpg");
+        grid-area: img-container;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .img-container::after{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .description-container{
+        height: 100%;
+        grid-area: description-container;
+        justify-content: space-between;
+        padding: 80px 70px;
+    }
+
+    .main-container{
+        width: 1400px;
+        height: 550px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "description-container img-container"
+        ;
+    }
+
+    .text-container h1{
+        font-size: 4.5rem;
+        text-align: left;
+    }
+
+    .text-container p{
+        width: 450px;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .data-container{
+        flex-direction: row;
+        column-gap: 60px;
+        justify-content: flex-start;
+    }
+
+    .data-item h2{
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .data-item p{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+}
+/* End Laptop screen */
+
 
 
 
