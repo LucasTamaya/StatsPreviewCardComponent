@@ -1,0 +1,26 @@
+/* Reset css */
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Reset css */
+
+/* General style */
+:root{
+    font-size: 10px;
+    /* Primary color */
+    --primary-clr-one: hsl(233, 47%, 7%);
+    --primary-clr-two: hsl(244, 38%, 16%);
+    --primary-clr-three: hsl(277, 64%, 61%);
+    /* Neutral color */
+    --neutral-clr-one: hsl(0, 0%, 100%);
+    --neutral-clr-two: hsla(0, 0%, 100%, 0.75);
+    --neutral-clr-three: hsla(0, 0%, 100%, 0.6);
+    /* Font family */
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Lexend Deca', sans-serif; 
+}
+/* End General style */
+
+
